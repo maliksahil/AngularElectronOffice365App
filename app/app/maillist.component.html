@@ -1,0 +1,6 @@
+<ul class="nav" id="side-menu" style="max-height:500px;overflow-y:scroll">
+    <li *ngFor="let mail of mails">
+       <a (click)="selectMail(mail)">
+           <i class="fa fa-envelope fa-fw"></i> {{mail.subject}}</a>
+    </li>
+</ul>

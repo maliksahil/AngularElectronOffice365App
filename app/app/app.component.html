@@ -1,0 +1,36 @@
+<div id="wrapper" *ngIf="userIsAuthenticated">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Mail App</a>
+        </div>
+        <!-- /.navbar-top-links -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <mailist [mails]="mails" (mailSelected)="mailSelected($event)">Loading..</mailist>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+    </nav>
+    <div id="page-wrapper">
+        <userdetails>Loading..</userdetails>
+        <!-- /.row -->
+        <maildetails *ngIf="mailDetails" [mailDetails]="mailDetails">Loading..</maildetails>
+        <!-- /.row -->
+    </div>
+    <!-- /#page-wrapper -->
+</div>
+
+<div id="wrapper" *ngIf="!userIsAuthenticated">
+    <div class="panel well">
+        <login></login>
+    </div>
+</div>
+
+<div id="wrapper">
+    <div class="panel well">
+        <h5>A sample app written using AngularJS2 and Typescript targeting Microsoft Graph, running in Electron.</h5>
+        <p>Written by Sahil Malik. <a href="#" class="alert-link">www.winsmarts.com.</a></p>
+    </div>
+</div>
