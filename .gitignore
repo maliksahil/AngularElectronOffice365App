@@ -1,5 +1,6 @@
 **/*.js.map
 **/*.js
 !app/main.js
+!app/sb2admin/**/*.js
 node_modules
 typings
