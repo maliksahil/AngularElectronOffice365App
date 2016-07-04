@@ -1,0 +1,16 @@
+<h1>Sample app</h1>
+<br/> This is a very simple app that authenticates, and lets you run a command...
+<div *ngIf="!isUserAuthenticated">
+    User is not authenticated
+    <button (click)="logIn()">Sign In</button>
+</div>
+<div *ngIf="isUserAuthenticated">
+    User is authenticated
+    <br/> Username: {{userName}} <br/>
+    <button (click)="logOut()">Sign Out</button>
+    <nav>
+        <a [routerLink]="['']">Home</a> |
+        <a [routerLink]="['/files']">Files</a>
+    </nav>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,8 @@
+Microsoft Graph Call: Files:
+<button (click)="getFiles()">Get Files</button>
+<ul>
+    <li *ngFor="let file of files">
+        <span>Name: {{file.remoteItem.name}}</span>
+        <span>Size: {{file.size}}</span>
+    </li>
+</ul>

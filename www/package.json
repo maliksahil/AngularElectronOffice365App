@@ -1,0 +1,8 @@
+{
+    "name": "angular2-o365-desktop-app",
+    "version": "1.0.0",
+    "build": {
+        "appId": "angular2App",
+        "app-category-type": "maliksahil.angular2.azuread.electron"
+    }
+}
