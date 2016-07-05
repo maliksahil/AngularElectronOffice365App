@@ -5,3 +5,5 @@ node_modules
 jspm_packages
 typings
 built
+!www/dist/lib/**/*.*
+!jspm.config.js
