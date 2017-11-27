@@ -1,4 +1,4 @@
-## Angular2 Office 365 Microsoft Graph Electron App
+## Angular Office 365 Microsoft Graph Electron App
 *This sample shows how to write an O365 targeting App that uses Electron*
 
 To use,
